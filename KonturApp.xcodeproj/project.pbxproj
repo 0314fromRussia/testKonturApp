@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5005B50F43D3FEECE8850005 /* Pods_KonturApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A15A34E1C9C3C2DC0F448B /* Pods_KonturApp.framework */; };
+		F17C0E6D27E62C3E00A54D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E6C27E62C3E00A54D04 /* AppDelegate.swift */; };
+		F17C0E6F27E62C3E00A54D04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E6E27E62C3E00A54D04 /* SceneDelegate.swift */; };
+		F17C0E7127E62C3E00A54D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E7027E62C3E00A54D04 /* ViewController.swift */; };
+		F17C0E7627E62C4200A54D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17C0E7527E62C4200A54D04 /* Assets.xcassets */; };
+		F17C0E7927E62C4200A54D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17C0E7727E62C4200A54D04 /* LaunchScreen.storyboard */; };
+		F17C0E8127E62C7300A54D04 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8027E62C7300A54D04 /* NetworkService.swift */; };
+		F17C0E8327E62C9400A54D04 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8227E62C9400A54D04 /* ContactModel.swift */; };
+		F17C0E8527E6307D00A54D04 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8427E6307D00A54D04 /* ContactTableViewCell.swift */; };
+		F17C0E8727E636AC00A54D04 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8627E636AC00A54D04 /* ContactView.swift */; };
+		F17C0E8927E6735800A54D04 /* APIEnumURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8827E6735800A54D04 /* APIEnumURL.swift */; };
+		F17C0E8B27E74D4900A54D04 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8A27E74D4800A54D04 /* ContactDetailViewController.swift */; };
+		F17C0E8D27E7501C00A54D04 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E8C27E7501C00A54D04 /* ContactDetailView.swift */; };
+		F17C0E9427E7AFE400A54D04 /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E9327E7AFE400A54D04 /* DBModel.swift */; };
+		F17C0E9D27E7B76B00A54D04 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0E9C27E7B76B00A54D04 /* AppDatabase.swift */; };
+		F17C0EA327E84DDF00A54D04 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0EA227E84DDF00A54D04 /* Extensions.swift */; };
+		F17C0EA527E8779200A54D04 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C0EA427E8779200A54D04 /* ErrorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41771D951301CA1E57D66F92 /* Pods-KonturApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonturApp.release.xcconfig"; path = "Target Support Files/Pods-KonturApp/Pods-KonturApp.release.xcconfig"; sourceTree = "<group>"; };
+		D19A4CD1672FDD54F7CBD3B4 /* Pods-KonturApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonturApp.debug.xcconfig"; path = "Target Support Files/Pods-KonturApp/Pods-KonturApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F0A15A34E1C9C3C2DC0F448B /* Pods_KonturApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KonturApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17C0E6927E62C3E00A54D04 /* KonturApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KonturApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17C0E6C27E62C3E00A54D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F17C0E6E27E62C3E00A54D04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F17C0E7027E62C3E00A54D04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F17C0E7527E62C4200A54D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F17C0E7827E62C4200A54D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F17C0E7A27E62C4200A54D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17C0E8027E62C7300A54D04 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F17C0E8227E62C9400A54D04 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		F17C0E8427E6307D00A54D04 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		F17C0E8627E636AC00A54D04 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		F17C0E8827E6735800A54D04 /* APIEnumURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnumURL.swift; sourceTree = "<group>"; };
+		F17C0E8A27E74D4800A54D04 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		F17C0E8C27E7501C00A54D04 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		F17C0E9327E7AFE400A54D04 /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		F17C0E9C27E7B76B00A54D04 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		F17C0EA227E84DDF00A54D04 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F17C0EA427E8779200A54D04 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F17C0E6627E62C3E00A54D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5005B50F43D3FEECE8850005 /* Pods_KonturApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F0E638B840EFD451E03C1A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A15A34E1C9C3C2DC0F448B /* Pods_KonturApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4A4141B9D006143B527DD71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19A4CD1672FDD54F7CBD3B4 /* Pods-KonturApp.debug.xcconfig */,
+				41771D951301CA1E57D66F92 /* Pods-KonturApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F17C0E6027E62C3E00A54D04 = {
+			isa = PBXGroup;
+			children = (
+				F17C0E6B27E62C3E00A54D04 /* KonturApp */,
+				F17C0E6A27E62C3E00A54D04 /* Products */,
+				B4A4141B9D006143B527DD71 /* Pods */,
+				5F0E638B840EFD451E03C1A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F17C0E6A27E62C3E00A54D04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E6927E62C3E00A54D04 /* KonturApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17C0E6B27E62C3E00A54D04 /* KonturApp */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E9B27E7B75500A54D04 /* DataBase */,
+				F17C0E9927E7B19E00A54D04 /* Views */,
+				F17C0E9827E7B17600A54D04 /* Controllers */,
+				F17C0E9727E7B15800A54D04 /* Models */,
+				F17C0E9627E7B14300A54D04 /* Network */,
+				F17C0E9527E7B12D00A54D04 /* API */,
+				F17C0E6C27E62C3E00A54D04 /* AppDelegate.swift */,
+				F17C0E6E27E62C3E00A54D04 /* SceneDelegate.swift */,
+				F17C0EA227E84DDF00A54D04 /* Extensions.swift */,
+				F17C0E7527E62C4200A54D04 /* Assets.xcassets */,
+				F17C0E7727E62C4200A54D04 /* LaunchScreen.storyboard */,
+				F17C0E7A27E62C4200A54D04 /* Info.plist */,
+			);
+			path = KonturApp;
+			sourceTree = "<group>";
+		};
+		F17C0E9527E7B12D00A54D04 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E8827E6735800A54D04 /* APIEnumURL.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F17C0E9627E7B14300A54D04 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E8027E62C7300A54D04 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F17C0E9727E7B15800A54D04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E8227E62C9400A54D04 /* ContactModel.swift */,
+				F17C0E9327E7AFE400A54D04 /* DBModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F17C0E9827E7B17600A54D04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E7027E62C3E00A54D04 /* ViewController.swift */,
+				F17C0E8A27E74D4800A54D04 /* ContactDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F17C0E9927E7B19E00A54D04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E9A27E7B1B700A54D04 /* Cells */,
+				F17C0E8C27E7501C00A54D04 /* ContactDetailView.swift */,
+				F17C0EA427E8779200A54D04 /* ErrorView.swift */,
+				F17C0E8627E636AC00A54D04 /* ContactView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F17C0E9A27E7B1B700A54D04 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E8427E6307D00A54D04 /* ContactTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F17C0E9B27E7B75500A54D04 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				F17C0E9C27E7B76B00A54D04 /* AppDatabase.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F17C0E6827E62C3E00A54D04 /* KonturApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17C0E7D27E62C4200A54D04 /* Build configuration list for PBXNativeTarget "KonturApp" */;
+			buildPhases = (
+				8BCBF3C2A9AC3302BEE78EE4 /* [CP] Check Pods Manifest.lock */,
+				F17C0E6527E62C3E00A54D04 /* Sources */,
+				F17C0E6627E62C3E00A54D04 /* Frameworks */,
+				F17C0E6727E62C3E00A54D04 /* Resources */,
+				E7AFBE11B7DBE7CC7EC4F3D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KonturApp;
+			productName = KonturApp;
+			productReference = F17C0E6927E62C3E00A54D04 /* KonturApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17C0E6127E62C3E00A54D04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F17C0E6827E62C3E00A54D04 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F17C0E6427E62C3E00A54D04 /* Build configuration list for PBXProject "KonturApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F17C0E6027E62C3E00A54D04;
+			productRefGroup = F17C0E6A27E62C3E00A54D04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17C0E6827E62C3E00A54D04 /* KonturApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F17C0E6727E62C3E00A54D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17C0E7927E62C4200A54D04 /* LaunchScreen.storyboard in Resources */,
+				F17C0E7627E62C4200A54D04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BCBF3C2A9AC3302BEE78EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KonturApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AFBE11B7DBE7CC7EC4F3D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KonturApp/Pods-KonturApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KonturApp/Pods-KonturApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KonturApp/Pods-KonturApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F17C0E6527E62C3E00A54D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17C0E8527E6307D00A54D04 /* ContactTableViewCell.swift in Sources */,
+				F17C0E9427E7AFE400A54D04 /* DBModel.swift in Sources */,
+				F17C0E7127E62C3E00A54D04 /* ViewController.swift in Sources */,
+				F17C0E6D27E62C3E00A54D04 /* AppDelegate.swift in Sources */,
+				F17C0E8127E62C7300A54D04 /* NetworkService.swift in Sources */,
+				F17C0E8D27E7501C00A54D04 /* ContactDetailView.swift in Sources */,
+				F17C0E9D27E7B76B00A54D04 /* AppDatabase.swift in Sources */,
+				F17C0E8B27E74D4900A54D04 /* ContactDetailViewController.swift in Sources */,
+				F17C0EA327E84DDF00A54D04 /* Extensions.swift in Sources */,
+				F17C0E8727E636AC00A54D04 /* ContactView.swift in Sources */,
+				F17C0E8927E6735800A54D04 /* APIEnumURL.swift in Sources */,
+				F17C0E8327E62C9400A54D04 /* ContactModel.swift in Sources */,
+				F17C0E6F27E62C3E00A54D04 /* SceneDelegate.swift in Sources */,
+				F17C0EA527E8779200A54D04 /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F17C0E7727E62C4200A54D04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17C0E7827E62C4200A54D04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F17C0E7B27E62C4200A54D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F17C0E7C27E62C4200A54D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F17C0E7E27E62C4200A54D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19A4CD1672FDD54F7CBD3B4 /* Pods-KonturApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KonturApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikita.KonturApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F17C0E7F27E62C4200A54D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41771D951301CA1E57D66F92 /* Pods-KonturApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KonturApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nikita.KonturApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F17C0E6427E62C3E00A54D04 /* Build configuration list for PBXProject "KonturApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17C0E7B27E62C4200A54D04 /* Debug */,
+				F17C0E7C27E62C4200A54D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17C0E7D27E62C4200A54D04 /* Build configuration list for PBXNativeTarget "KonturApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17C0E7E27E62C4200A54D04 /* Debug */,
+				F17C0E7F27E62C4200A54D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17C0E6127E62C3E00A54D04 /* Project object */;
+}

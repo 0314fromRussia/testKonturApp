@@ -1,0 +1,6 @@
+framework module Pods_KonturApp {
+  umbrella header "Pods-KonturApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
